@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 60px;
+      height: 80px;
+      background: radial-gradient(circle at 30% 30%, #ff6b81, #ff4757);
+      border-radius: 50% 50% 50% 50%;
+      animation: float 10s linear infinite;
+    }
+
+    .balloon::after {
+      content: '';
+      position: absolute;
+      top: 80px;
+      left: 28px;
+      width: 4px;
+      height: 100px;
+      background: gray;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-110vh); opacity: 0; }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-yellow-200 via-pink-50 to-blue-400 min-h-screen">
+    <div class="flex flex-col gap-4  items-center min-h-screen  mt-10">
+        
+         <!--<div class="flex flex-col gap-6 items-center">
+        <svg class="  -top-6 w-[650px] h-[80px]" viewBox="0 0 650 80" fill="none">
+           <path d="M 0 10 Q 325 100 650 10" stroke="black" stroke-width="2" fill="transparent" />
+       </svg>-->
+       <div class="relative flex flex-col items-center">
+      <!-- Thread -->
+      <svg class="absolute -top-3 w-[900px] h-[100px]" viewBox="0 0 900 100" fill="none">
+        <path d="M 0 10 Q 450 90 900 10" stroke="black" stroke-width="2" fill="transparent" />
+      </svg>
+
+        <div class="flex gap-4">
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            H
+        </div>
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            A
+        </div>
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            P
+        </div>
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            P
+        </div>
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            Y
+        </div>
+    </div>
+    </div>
+
+
+     <div class="relative flex flex-col items-center">
+      <!-- Thread -->
+      <svg class="absolute -top-3 w-[900px] h-[100px]" viewBox="0 0 900 100" fill="none">
+        <path d="M 0 10 Q 450 90 900 10" stroke="black" stroke-width="2" fill="transparent" />
+      </svg>
+
+     <div class="flex gap-4">
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            B
+        </div>
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            I
+        </div>
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            R
+        </div>
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            T
+        </div>
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            H
+        </div>
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            D
+        </div>
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            A
+        </div>
+        <div class="w-[110px] h-[130px] bg-blue-500 text-white font-bold text-4xl flex items-center justify-center
+                    [clip-path:polygon(0_0,100%_0,100%_80%,50%_100%,0_80%)]">
+            Y   
+        </div>
+    </div>
+      </div>  
+
+      <!-- Balloons -->
+<div class="absolute inset-0 pointer-events-none">
+  <div class="balloon left-[20%]"></div>
+  <div class="balloon left-[40%]"></div>
+  <div class="balloon left-[60%]"></div>
+  <div class="balloon left-[80%]"></div>
+</div>
+
+      <div class="relative w-[300px] mx-auto mt-10">
+  <img src="./imagesbirthday/cake1wtbg.png" alt="Birthday Cake" class="w-full rounded-lg">
+  
+  <!-- Candle flames overlay -->
+  <div class="absolute top-[6px] left-[105px] flex flex-col items-center">
+    <div class="flame animate-flicker" data-id="1"></div>
+    <div class="w-[6px] h-[44px] bg-yellow-600"></div>
+  </div>
+
+  <!-- Candle 2 -->
+  <div class="absolute top-[6px] left-[145px] flex flex-col items-center">
+    <div class="flame animate-flicker" data-id="2"></div>
+    <div class="w-[6px] h-[44px] bg-yellow-600"></div>
+  </div>
+
+  <!-- Candle 3 -->
+  <div class="absolute top-[6px] left-[185px] flex flex-col items-center">
+    <div class="flame animate-flicker" data-id="3"></div>
+    <div class="w-[6px] h-[44px] bg-yellow-600"></div>
+  </div>
+</div>
+<!--<div id="letter" class="w-[300px] h-[200px] bg-white shadow-2xl rounded-lg flex items-center justify-center text-xl font-bold scale-0 transition-transform duration-700">
+    🎉 Surprise! Here’s Your Special Letter 💖
+  </div>-->
+ <div class="text-center mt-6 z-50">
+  <button onclick="goToLetter()" 
+          class="px-6 py-3 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-600 transition">
+    Open Your Letter 💌
+  </button>
+</div>
+
+
+
+    <style>
+    .flame {
+      width: 15px;
+      height: 25px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 30%, gold 30%, orange 70%, transparent 100%);
+      cursor: pointer;
+    }
+
+    @keyframes flicker {
+      from { transform: scale(1) translateY(0); opacity: 1; }
+      to   { transform: scale(1.2) translateY(-3px); opacity: 0.9; }
+    }
+
+    .animate-flicker {
+      animation: flicker 0.2s infinite alternate;
+    }
+
+    .hidden-flame {
+      opacity: 0;
+      animation: none;
+    }
+  </style>
+
+  <script>
+  // Get all flames
+  const flames = document.querySelectorAll('.flame');
+
+  flames.forEach(flame => {
+    // Blow out when clicked/touched
+    flame.addEventListener('click', () => {
+      flame.classList.add('hidden-flame');
+      flame.classList.remove('animate-flicker');
+    });
+
+    // Reignite when mouse moves over the candle area
+    flame.parentElement.addEventListener('mouseenter', () => {
+      flame.classList.remove('hidden-flame');
+      flame.classList.add('animate-flicker');
+    });
+  });
+</script>
+</div>
+<canvas id="confetti-canvas" class="absolute inset-0 pointer-events-none"></canvas>
+
+<script>
+  const canvas = document.getElementById("confetti-canvas");
+  const ctx = canvas.getContext("2d");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const confetti = Array.from({ length: 150 }).map(() => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height - canvas.height,
+    w: 8,
+    h: 14,
+    color: `hsl(${Math.random() * 360}, 70%, 60%)`,
+    speed: Math.random() * 3 + 2
+  }));
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    confetti.forEach(c => {
+      ctx.fillStyle = c.color;
+      ctx.fillRect(c.x, c.y, c.w, c.h);
+      c.y += c.speed;
+      //if (c.y > canvas.height) c.y = -20;
+    });
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+   setTimeout(() => {
+      cancelAnimationFrame(animationId);
+      document.getElementById("next-btn").classList.remove("hidden");
+    }, 5000);
+
+    // Redirect when button clicked
+    document.getElementById("next-btn").addEventListener("click", () => {
+      window.location.href = "letter.html";
+    });
+
+     // Animate letter popping up
+   /* window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("letter").classList.remove("scale-0");
+        document.getElementById("letter").classList.add("scale-100");
+      }, 500);
+    });*/
+</script>
+<script>
+  function goToLetter() {
+    window.location.href = "letter.html"; // takes you to the next page
+  }
+</script>
+
+    
+</body>
+</html>
